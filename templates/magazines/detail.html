@@ -2,22 +2,28 @@
 {% load static %}
 
 {% block content %}
-
+ 
 <div class="row">
     <div class="col-md-12">
+      
 <div id="content" class="p-4 mb-4 bg-light rounded-3">
     <div class="container-fluid py-2">
-      <h1 class="display-5 fw-bold"></h1>
-      <div class="card mb-5">           
-        <div class="row">               
-            <div class="col-md-4">                   
-                <img class ="card-img" src="{% static magazine.get_image_path %}" alt="">                   
-            </div>  
-      <p class="col-md-8 fs-4">
-        {{ magazine.description }}
-        </p>
-    </div>
-  </div>
+      <div class="container">                   
+  <img src="{% static magazine.get_image_path %}" class ="rounded mx-auto d-block" style="max-width:50%;" alt="">                   
+</div> 
+</div>
+
+<div class="container-fluid py-2">
+  <h1 class="display-5 fw-bold"></h1>
+  <div class="card mb-5">           
+    <div class="row">
+      <h1 class="display-5 fw-bold text-center">{{magazine.name}}</h1> 
+                        
+  <p class="p-4 fs-5">
+    {{ magazine.real_content }}
+  </p>
+</div>
+</div>
 </div>
 
 </div>

@@ -6,7 +6,8 @@ from django.db import models
 
 class Magazine(models.Model):
     name=models.CharField(max_length=100)
-    description = models.TextField()
+    description = models.TextField(max_length=500)
+    real_content = models.TextField(default="",)
     image =models.CharField(max_length=50)
     created_date =models.DateTimeField(auto_now_add=True)
     isPublished=models.BooleanField(default=True)
