@@ -1,0 +1,17 @@
+<head>
+    <div class="topnav bg-dark">
+
+        <!-- yoruma alma ctrl+k+c
+
+        {%if request.path == '/'%}
+        class="active"
+        {% else %}
+        {% endif %}
+
+         -->
+        <a class="active" href="{% url 'index' %}">Home</a>
+        <a href="{% url 'contact' %}">Contact</a>    
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'magazines' %}">Magazines</a>          
+    </div>
+</head>

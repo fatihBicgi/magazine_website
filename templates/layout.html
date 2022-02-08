@@ -1,0 +1,42 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+</head>
+<style>
+    #content{
+        margin-left: 252px;
+        padding-top: 10px;
+        background-color: wheat;
+        
+     }
+     #sidebarmf{
+         margin-top: -60px;
+         position: fixed;
+         background-color: rgb(24, 33, 44);
+     }
+</style>
+<body>
+    {%include 'partials/_navbar.html'%}
+    <main>  
+        {%include 'partials/_sidebar.html'%} 
+   
+        {% block content%}        
+        {% endblock %} 
+          
+    </main>
+    {%include 'partials/_footer.html'%}
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
