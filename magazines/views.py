@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.shortcuts import get_object_or_404
 from django.http import Http404
 from .models import Magazine
+from django.views.generic import ListView
+
+
 
 # Create your views here.
 # http://127.0.0.1:8000/
