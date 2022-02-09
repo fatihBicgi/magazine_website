@@ -7,7 +7,7 @@ from django.db import models
 
 class Magazine(models.Model):
     name=models.CharField(max_length=100)
-    category=models.CharField(default="",max_length=100)
+    category=models.CharField(max_length=100)
     description = models.TextField(max_length=500)
     real_content = models.TextField(default="",)
     image =models.CharField(max_length=50)
