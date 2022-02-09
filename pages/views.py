@@ -20,4 +20,8 @@ def contact(request):
     return render(request, 'pages/contact.html')  
 
 def news(request):
-    return render(request, 'pages/news.html') 
+    magazines= Magazine.objects.all().order_by('name')
+    context = {
+        'magazines' : magazines
+    }
+    return render(request, 'pages/news.html',context)
