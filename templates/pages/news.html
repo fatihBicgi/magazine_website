@@ -24,12 +24,12 @@
           <div class="col-md-9">
               <div class="card-body">
                   <div class="card-title"> 
-                    <a href="{% url 'detail' magazine.id %}">{{ magazine.name }}</a> 
+                    <p class="fw-bold">{{ magazine.name }}</p> 
                   </div>
                   <p class="card-text">
                     {{ magazine.description }}                    </p>
                   <p class="card-text">
-                      <small class="text-muted">{{ magazine.created_date | timesince }}</small>
+                      <small class="text-muted">Sonraki Ay Yayında!</small>
                   </p>                       
               </div>
           </div>               
