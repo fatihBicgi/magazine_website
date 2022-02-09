@@ -1,67 +1,20 @@
 {%extends 'layout.html'%}
 {% load static %}
+{% load humanize %}
 
 {% block content %}
 
 <div id="content" class="p-5 mb-4 bg-light rounded-3">
     <div class="container-fluid py-5">
-      <h1 class="display-5 fw-bold">Home Page</h1>
-      <p class="col-md-8 fs-4">
-          Sayfaya hoşgeldiniz
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, architecto!
-      </p>
+      <h1 class="display-5 fw-bold">Ana Sayfa</h1>
+      <p class="col-md-6 fs-4">Sıralama seçimi için butonlara tıklayınız</p>
+      <button class="btn btn-outline-primary" type="button">Alfabetik</button>
+      <button class="btn btn-outline-primary" type="button">Yayın Tarihi</button>
+      <button class="btn btn-outline-primary" type="button">Akıllı Sıralama</button>
     </div>
   </div>
 
-<div id= "content" class="row col-md-10">    
-    <div class="col-md-12">        
-        <div class="card mb-3">           
-            <div class="row">               
-                <div class="col-md-3">                   
-                    <img class ="card-img" src="{% static 'images/b.jpg' %}" alt="">                   
-                </div>               
-                <div class="col-md-9">
-                    <div class="card-body">
-                        <div class="card-title">enivici</div>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, obcaecati!
-                        </p>
-                        <p class="card-text">
-                            <small class="text-muted">3 days ago</small>
-                        </p>                       
-                    </div>
-                </div>
-                
-            </div>           
-        </div>
-        
-    </div>
-</div>
 
-<div id= "content" class="row ">    
-    <div class="col-md-12">        
-        <div class="card mb-3">           
-            <div class="row">               
-                <div class="col-md-3">                   
-                    <img class ="card-img" src="{% static 'images/c.jpg' %}" alt="">                   
-                </div>               
-                <div class="col-md-9">
-                    <div class="card-body">
-                        <div class="card-title">enivici</div>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, obcaecati!
-                        </p>
-                        <p class="card-text">
-                            <small class="text-muted">3 days ago</small>
-                        </p>                       
-                    </div>
-                </div>
-                
-            </div>           
-        </div>
-        
-    </div>
-</div>
- 
+         
                
 {% endblock content %}
