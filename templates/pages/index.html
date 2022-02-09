@@ -15,6 +15,44 @@
   </div>
 
 
+  <div id= "content" class="row">    
+    <div class="col-md-12">           
+      {% if magazines %}
+        {% for magazine in magazines %}
+
+          <div class="card mb-3">           
+        <div class="row">               
+            <div class="col-md-3">                   
+                <img class ="card-img" src="{% static magazine.get_image_path %}" alt="">                   
+            </div>               
+            <div class="col-md-9">
+                <div class="card-body">
+                    <div class="card-title"> 
+                      <a href="{% url 'detail' magazine.id %}">{{ magazine.name }}</a> 
+                    </div>
+                    <p class="card-text">
+                      {{ magazine.description }}                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">{{ magazine.created_date | timesince }}</small>
+                    </p>                       
+                </div>
+            </div>               
+        </div>           
+          </div>  
+
+        {% endfor %}
+
+      {% else %}
+      <div class="alert alert-warning">
+        <p>
+          no magazines
+        </p>
+      </div>
+
+      {% endif %}
+
+
+
          
                
 {% endblock content %}
