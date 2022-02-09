@@ -18,3 +18,6 @@ def about(request):
 
 def contact(request):
     return render(request, 'pages/contact.html')  
+
+def news(request):
+    return render(request, 'pages/news.html') 
