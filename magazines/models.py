@@ -1,11 +1,13 @@
 from operator import truediv
 from pydoc import describe
+from unicodedata import category
 from django.db import models
 
 # Create your models here.
 
 class Magazine(models.Model):
     name=models.CharField(max_length=100)
+    category=models.CharField(default="",max_length=100)
     description = models.TextField(max_length=500)
     real_content = models.TextField(default="",)
     image =models.CharField(max_length=50)

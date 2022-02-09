@@ -5,7 +5,7 @@ from magazines.models import Magazine
 
 # Create your views here.
 # http://127.0.0.1:8000/
-def index(request):
+def index(request):  
     magazines= Magazine.objects.all().order_by('-created_date')
     context = {
         'magazines' : magazines
