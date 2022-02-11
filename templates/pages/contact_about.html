@@ -1,0 +1,30 @@
+{%extends 'layout.html'%}
+{% load static %}
+
+{% block content %}
+{% if texts %}
+
+  {% for text in texts %}
+
+        <div id="content" class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">{{ text.name }}</h1>
+      <p class="col-md-8 fs-4">
+        {{ text.content }}
+
+      </p>
+    </div>
+   </div>
+  {% endfor %}
+  
+
+{% else %}
+  <div class="alert alert-warning">
+    <p>
+      no magazines
+    </p>
+  </div>
+
+{% endif %}
+ 
+{% endblock content %}
