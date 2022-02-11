@@ -1,3 +1,5 @@
+from optparse import make_option
+from unittest.main import main
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
@@ -27,6 +29,7 @@ def contact_about(request):
 def news(request):
     magazines= Magazine.objects.all().order_by('name')
     context = {
-        'magazines' : magazines
+        'magazines': magazines,
+        'data': 99
     }
     return render(request, 'pages/news.html',context)
