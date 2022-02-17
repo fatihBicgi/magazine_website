@@ -137,10 +137,9 @@ GitHub.sublime-settings
 .history
 
 # images # 
-
+*.jpg
 
 
 # videos #
 *.mp4
 *.mkv
-*.jpg
