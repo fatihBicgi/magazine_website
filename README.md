@@ -1,4 +1,4 @@
-# Magazines Web Site
+# Magazines Web Site (Django-Python)
 
 ## Main Page
 
