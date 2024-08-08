@@ -1,5 +1,7 @@
 # Magazines Web Site (Django-Python)
 
+## [Youtube Video](https://youtu.be/38gVwSxY0tE)
+
 ## Main Page
 
 ![image](https://user-images.githubusercontent.com/99922562/196470651-ac02141c-e87c-4cf9-bdb7-30b6dd6689f6.png)
